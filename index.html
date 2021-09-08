@@ -2,13 +2,36 @@
 
 <head>
     <title>process draw</title>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
-  
+   <div id="mainhead"> 
+        <button id="lineBtBsizer">贝塞尔</button>
+    </div>
     <div class="mainBody">
       <p>testst this process page</p> 
+         <p id="testp">testst this process page</p> 
     </div>
     
 </body>
+<script>
+  window.onload = function () {
+   document.getElementById("lineBtBsizer").onclick = function () {
+            axios.get('http://119.59.247.232/test')
+  .then(function (response) {
+    console.log(response);
+    document.getElementById("testp").textContent=response;
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+            document.getElementById("testp").textContent=
+        };
+  
+  }  
+    
+    </script>
 </html>
