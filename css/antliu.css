@@ -1,0 +1,75 @@
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
+}
+::-webkit-scrollbar-button{
+  display: none;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #BBBBBB;
+}
+#antLiuAppBox{
+    position: relative;
+    width: 100%;
+}
+#antLiuAppBox>.modelBox{
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 150px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-right: 1px solid #333333 ;
+    overflow-y: scroll;
+}
+#antLiuAppBox>.canvasBox{
+    height: 100%;
+    background-color: #FFFFFF; 
+ position: absolute;
+ top: 0px;
+ left: 152px;
+ overflow-y: auto;
+ overflow-x: auto;
+ outline: none;
+}
+#antLiuAppBox>.canvasBox>canvas{
+    display: block;
+position: absolute;
+top: 0px;
+left:0px;
+}
+#antLiuAppBox>.canvasBox>.textEditArea{
+overflow-x: hidden;
+    overflow-y: hidden;
+    resize: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: none;
+    width: 100px;
+    border: none;
+    min-height: 20px;
+    height: auto;
+    visibility: "hidden";
+    text-align: center;
+    outline: none;
+}
+#antLiuAppBox>.canvasBox>.lineTextEditArea{
+    overflow-x: hidden;
+        overflow-y: hidden;
+        resize: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: none;
+        border: none;
+        min-width:  20px;
+        min-height: 20px;
+        height: auto;
+        width: auto;
+        visibility: "hidden";
+        text-align: center;
+        outline: none;
+    }
